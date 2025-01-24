@@ -1,0 +1,28 @@
+1. Core Data Structures & Algorithms:
+
+Lists: Creating, manipulating, and iterating over lists. List comprehensions.
+Dictionaries: Key-value pairs, efficient lookups, and dictionary methods.
+Sets: Membership testing, set operations (union, intersection, difference).
+Tuples: Immutable sequences, efficient for storing and accessing data.
+Basic Algorithms: Searching (linear and binary), sorting (bubble, insertion, selection).
+2. Control Flow & Logic:
+
+Conditional Statements: if, elif, else for decision-making.
+Loops: for and while loops for iteration.
+Functions: Defining, calling, and using arguments and return values.
+3. Object-Oriented Programming (OOP) Fundamentals:
+
+Classes: Creating classes and objects, attributes, and methods.
+Inheritance: Understanding parent-child relationships between classes.
+Encapsulation: Data hiding and information protection.
+Polymorphism: Overriding methods and achieving different behaviors.
+4. Working with Files & Data:
+
+File Handling: Opening, reading, writing, and closing files.
+Working with CSV/JSON: Reading and writing data in common file formats.
+Data Structures (advanced): Stacks, Queues, Trees (basic understanding).
+5. Essential Libraries:
+
+math: Mathematical functions (e.g., sqrt, sin, cos).
+random: Generating random numbers.
+datetime: Working with dates and times.

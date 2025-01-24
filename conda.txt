@@ -1,0 +1,5 @@
+conda create --name python
+conda activate python
+
+
+conda run -n python python -c "import pandas; print(pandas.__version__)"

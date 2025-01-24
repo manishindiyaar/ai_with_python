@@ -1,0 +1,8 @@
+[
+    {
+        "id": 6772,
+        "name": "Python Workshop",
+        "date": "2023-10-05",
+        "description": "A workshop about Python basics."
+    }
+]
