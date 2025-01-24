@@ -1,22 +1,26 @@
 import os
 from openai import AzureOpenAI
 from dotenv import load_dotenv
+from groq import Groq
 
 
 load_dotenv()
 
 class LLM:
     def __init__(self):
-        self.client = AzureOpenAI(
-            api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-            api_version="2024-08-01-preview",
-            azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+        # self.client = AzureOpenAI(
+        #     api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+        #     api_version="2024-08-01-preview",
+        #     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+        # )
+        self.client = Groq( 
+            api_key=os.getenv("GROQ_API_KEY")
         )
 
     def get_response(self, prompt):
         try:
             completion = self.client.chat.completions.create(
-                model="gpt-4",
+                model="llama-3.3-70b-versatile",
                 messages=[
                     {
                         "role": "system", "content": "You are Helpfull assistant"

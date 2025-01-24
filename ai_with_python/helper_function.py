@@ -5,11 +5,16 @@ import csv
 import os
 from openai import AzureOpenAI
 from dotenv import load_dotenv
+from groq import Groq
 load_dotenv()
-client = AzureOpenAI(
-  api_key = os.getenv("AZURE_OPENAI_API_KEY"),  
-  api_version = "2024-08-01-preview",
-  azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+# client = AzureOpenAI(
+#   api_key = os.getenv("AZURE_OPENAI_API_KEY"),  
+#   api_version = "2024-08-01-preview",
+#   azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+# )
+
+client = Groq(
+    api_key=os.getenv("GROQ_API_KEY"),
 )
 
 # def azure_openai(prompt):
@@ -39,7 +44,7 @@ def print_llm_response(prompt):
         if not isinstance(prompt, str):
             raise ValueError("Input must be a string enclosed in quotes.")
         completion = client.chat.completions.create(
-            model="gpt-4",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {
                     "role": "system",
